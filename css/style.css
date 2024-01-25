@@ -20,10 +20,11 @@ body {
 }
 
 nav {
+    border-bottom: 1px solid #E4E9F2;
     display: flex;
     gap: 56px;
     padding-bottom: 34px;
-    border-bottom: 1px solid #E4E9F2;
+    margin-bottom: 90px;
 }
 
 .nav-sub {
@@ -44,4 +45,21 @@ ul {
     display: flex;
     gap: 46px;
     align-items: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 125px;
+    margin: 0 auto;
+    width: 1015px;
+}
+
+article>img:first-child {
+    margin-bottom: 32px;
+
+}
+
+article>img:not(:last-child) {
+    margin-right: 26px;
 }

@@ -22,6 +22,8 @@ body {
 nav {
     display: flex;
     gap: 56px;
+    padding-bottom: 34px;
+    border-bottom: 1px solid #E4E9F2;
 }
 
 .nav-sub {

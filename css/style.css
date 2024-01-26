@@ -66,24 +66,14 @@ main {
     width: 1015px;
 }
 
-/* .left a {
-    display: inline-block;
-} */
 
 .left>img:first-child {
     margin-bottom: 32px;
-    border: 2px solid red;
 }
 
 article.left>a:not(:nth-of-type(4))>img {
     margin-right: 23px;
-    border: 2px solid blue;
 }
-
-/* article.left  > a:nth-of-type(4) > img {
-margin-right: 0;
-} */
-
 
 .right h4 {
     color: #FF7E1B;

@@ -27,6 +27,11 @@ nav {
     margin-bottom: 90px;
 }
 
+nav>a {
+    text-decoration: none;
+    align-self: center;
+}
+
 .nav-sub {
     display: flex;
     justify-content: space-between;
@@ -39,6 +44,11 @@ ul {
     display: flex;
     gap: 32px;
     list-style: none;
+}
+
+ul>a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .conversions {
@@ -56,14 +66,24 @@ main {
     width: 1015px;
 }
 
+/* .left a {
+    display: inline-block;
+} */
+
 .left>img:first-child {
     margin-bottom: 32px;
-
+    border: 2px solid red;
 }
 
-.left>img:not(:last-child) {
-    margin-right: 26px;
+article.left>a:not(:nth-of-type(4))>img {
+    margin-right: 23px;
+    border: 2px solid blue;
 }
+
+/* article.left  > a:nth-of-type(4) > img {
+margin-right: 0;
+} */
+
 
 .right h4 {
     color: #FF7E1B;
@@ -129,11 +149,16 @@ main {
     background: #F6F8FD;
     border-radius: 10px;
     display: flex;
+
     font-size: 32px;
     font-weight: 700;
     gap: 46px;
     padding: 16px 22px;
 }
+
+/* .counter a {
+    display: inline-block;
+} */
 
 .cta a {
     align-items: center;

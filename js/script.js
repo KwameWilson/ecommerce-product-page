@@ -1,15 +1,11 @@
 const left = document.querySelector('.left');
 const heroImg = document.querySelector('.hero-img');
+const thumbnails = document.querySelectorAll('.thumb')
 // const link = document.querySelector()
 
 
-const getPath = e => {
-
-    if (e.target.tagName === 'IMG') {
-        const path = e.target.getAttribute('src')
-        const smallImg = path.split('/')[1];
-        console.log(smallImg);
-    }
-}
-
-left.addEventListener("click", getPath);
+thumbnails.forEach(e => {
+    e.addEventListener('click', () => {
+        heroImg.setAttribute('src', e.getAttribute('data-url'))
+    })
+})

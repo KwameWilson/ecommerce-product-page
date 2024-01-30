@@ -73,15 +73,14 @@ main {
     border-radius: 15px;
 }
 
-.left>a:not(:nth-of-type(4))>img {
-    margin-right: 26px;
-    width: 88px;
-}
-
-.left>a:nth-of-type(4) img,
-.left>a:not(:nth-of-type(4))>img {
+.left>img:not(:first-of-type) {
+    margin-right: 27px;
     width: 88px;
     border-radius: 6px;
+}
+
+.left>img:nth-child(5) {
+    margin-right: 0;
 }
 
 .right h4 {
